@@ -1,0 +1,14 @@
+body{
+
+    background-image: url(/img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+
+    background-color: chartreuse;
+}
+nav{
+    background-color: aqua;
+}

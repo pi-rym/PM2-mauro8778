@@ -1,0 +1,10 @@
+body{
+
+    background-image: url(/img/fondo.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 2;
+    
+}

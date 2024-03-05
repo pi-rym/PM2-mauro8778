@@ -5,9 +5,7 @@ tempData.map((card)=>{
                 
                     <div class="card" >
                     <h3 class="titulo"><a class="link" href="">${card.title}</a><h3>
-                    <p>Año:${card.year}</p><p>Director:${card.director}</p><p>Duracion:${card.duration}</p><p>Puntuación:${card.rate}</p>
-                    <img  src="${card.poster}" class="img"<a href=""></a> > 
-
+                     <img  src="${card.poster}" class="img"<a href=""></a> > 
                      </div>
     
     </div>   ` 
