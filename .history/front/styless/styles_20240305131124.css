@@ -1,0 +1,144 @@
+body{
+
+    background-image: url(/img/fondo.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#titulo{
+    padding: 1em 10em 1em 10em;
+    border: 0.5em dashed white;
+    margin:190px;
+    justify-content: center;
+
+}
+#titulo:hover{
+
+    transition-delay: initial;
+}
+
+
+
+h1{
+    margin: 10px;
+    color: white;
+    font-size: 9vw;
+    text-align: center;
+    font-family:"Rye", serif;
+    
+}
+
+
+h2{
+
+    color: white;
+    margin: auto;
+    font-size: 5vw;
+    text-align: center;
+    font-family:niconne;
+    font-style: italic;
+}
+nav{
+
+    padding: 3vw;
+}
+#clase{
+
+    padding: 5vw;
+    display: flex;
+}
+.genero{
+
+    font-family:"Rye", serif;;
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+    margin: 5vw 4vw 1vw 1vw;
+    padding: 1vw;
+    border-radius: 25%;
+    border-right:2px solid #ffffff;
+    border-top:2px solid red; 
+    position:relative;
+    top: 0;
+transition: top ease 0.5s;
+}
+.genero:hover{
+
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    top: 10px;
+
+
+
+
+}
+.link {
+    color: white;
+
+}
+.link:hover { 
+    
+    color: red; } 
+
+#CardsContenier{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+text-align: center;
+
+}
+
+.contenedor{
+    padding: 1vw;
+   
+}
+
+.card{
+    text-align: center;
+    background-image: url(.img);
+    padding: 1vw;
+    margin:auto;
+    border-radius: 25%;
+    background: radial-gradient(circle, #ff0000, rgb(13, 0, 0));
+}
+
+.titulo{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* fondo semi-transparente */
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0; /* ocultar el texto por defecto */
+    transition: opacity 0.3s ease-in-out; /* efecto de transición */
+
+}
+.img{
+    position: relative;
+    display: inline-block;
+}
+.img:hover .titulo.p{
+
+    opacity: 1;
+}
+p{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7); /* fondo semi-transparente */
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0; /* ocultar el texto por defecto */
+  transition: opacity 0.3s ease-in-out; /* efecto de transición */
+}
+
+button{
+
+    display: flex;
+}

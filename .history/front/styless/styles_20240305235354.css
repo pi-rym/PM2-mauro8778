@@ -1,0 +1,151 @@
+body{
+
+    background-image: url(/img/fondo2.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#titulo{
+    padding: 1em 1em 1em 1em;
+    border: 0.5em dashed white;
+    margin:1em;
+    justify-content: center;
+
+}
+#titulo:hover{
+
+    transition-delay: initial;
+}
+
+
+
+h1{
+    margin: 10px;
+    color: white;
+    font-size: 9vw;
+    text-align: center;
+    font-family:"Rye", serif;
+    
+}
+
+.titulope{
+
+    padding: 5px;
+    border: 0.5em dashed white;
+    margin: 1em 1em 1em 23em;
+    justify-content: center;
+    display: inline-block;
+    display: center;
+
+}
+
+
+h2{
+
+    color: white;
+    margin: auto;
+    font-size: 5vw;
+    text-align: center;
+    font-family:niconne;
+    font-style: italic;
+
+}
+
+nav{
+
+    padding: 1vw;
+}
+#clase{
+    margin: auto;
+    padding: 7vw;
+    display: flex;
+    justify-content: center;
+}
+.genero{
+
+    font-family:"Rye", serif;;
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+    margin: 5vw 4vw 1vw 1vw;
+    padding: 1vw;
+    border-radius: 25%;
+    border-right:2px solid #ffffff;
+    border-top:2px solid red; 
+    position:relative;
+    top: 0;
+transition: top ease 0.5s;
+}
+.genero:hover{
+
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    top: 10px;
+
+
+
+
+}
+.link {
+    color: white;
+
+}
+.link:hover { 
+    
+    color: red; } 
+
+#CardsContenier{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+text-align: center;
+
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: transform 0.5s ease; /* Transición para el movimiento vertical */
+  }
+  
+  .card {
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0.1em dashed  white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Transición para el efecto hover */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Mover hacia arriba al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Añadir una sombra más pronunciada */
+  }
+  
+  .titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .p {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+button{
+
+    display: flex;
+}
