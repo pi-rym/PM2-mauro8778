@@ -10,7 +10,7 @@ agregarProducto(producto){
     }
 
 
-calcularTotal(){
+carlcularTotal(){
 
     let total = 0;
 
@@ -19,10 +19,10 @@ calcularTotal(){
     }
     return total
 }
-aplicarDescuento(porcentajeDescuento){
+aplicarDescuento(){
 
-    const subtotal= this.calcularTotal()
-    const descuento= subtotal * (porcentajeDescuento / 100)
+    const subtotal= this.carlcularTotal()
+    const descuento= this.carlcularTotal * (porcentaje / 100)
     const total= subtotal-descuento
 
     return total;

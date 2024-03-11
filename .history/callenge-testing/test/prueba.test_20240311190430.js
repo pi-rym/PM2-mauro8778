@@ -23,7 +23,7 @@ describe('sobre el constructor de la clase CarritoCompra',()=>{
 
 
     it('Deberia guardar productos en la lista',()=>{
-        expect(carrito.productos).toEqual([]);
+        expect(carrito.productos).toBe([]);
     })
 
 })
@@ -52,7 +52,7 @@ describe('metodos de la clase carritoCompra',()=>{
 
     it('deberia tener un metodo para llamar a la calculadora',()=>{
 
-        expect(typeof carrito.calcularTotal).toBe('function')
+        expect(typeof carrito.carlcularTotal).toBe('function')
     })
     it('deberia poder agregar un producto a la lista',()=>{
 
@@ -60,15 +60,12 @@ describe('metodos de la clase carritoCompra',()=>{
         expect(carrito.productos).toContain(producto1)
     })
 
-    it('el metodo calcularTotal deberia sumar todos los productos',()=>{
+    it('el metodo calculartotal deberia sumar todos los productos',()=>{
 
         carrito.agregarProducto(producto1)
         carrito.agregarProducto(producto2)
-
-        const totalExpect = producto1.precio * producto1.cantidad + producto2.precio * producto2.cantidad;
-
-        const total = carrito.calcularTotal();
-
+        const total = producto1.precio * producto1.cantidad + producto2.precio * producto2.cantidad
+        carrito.calcularTotal()
         expect(total).toBe(totalExpect)
 
     })
@@ -80,10 +77,9 @@ describe('metodos de la clase carritoCompra',()=>{
 
         const subtotal = producto1.precio * producto1.cantidad + producto2.precio * producto2.cantidad;
 
-        const porcentajeDescuento = 30
+        const porcentajeDescuento=30
 
-        const totalExpect = subtotal - subtotal * (porcentajeDescuento/100)
-
+        const totalExpect =subtotal -  (subtotal * (porcentajeDescuento/100))
     
         const total = carrito.aplicarDescuento(porcentajeDescuento)
 

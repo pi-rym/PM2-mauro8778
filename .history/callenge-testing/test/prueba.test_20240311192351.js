@@ -23,7 +23,7 @@ describe('sobre el constructor de la clase CarritoCompra',()=>{
 
 
     it('Deberia guardar productos en la lista',()=>{
-        expect(carrito.productos).toEqual([]);
+        expect(carrito.productos).toBe([]);
     })
 
 })
@@ -52,7 +52,7 @@ describe('metodos de la clase carritoCompra',()=>{
 
     it('deberia tener un metodo para llamar a la calculadora',()=>{
 
-        expect(typeof carrito.calcularTotal).toBe('function')
+        expect(typeof carrito.carlcularTotal).toBe('function')
     })
     it('deberia poder agregar un producto a la lista',()=>{
 
@@ -60,7 +60,7 @@ describe('metodos de la clase carritoCompra',()=>{
         expect(carrito.productos).toContain(producto1)
     })
 
-    it('el metodo calcularTotal deberia sumar todos los productos',()=>{
+    it('el metodo calculartotal deberia sumar todos los productos',()=>{
 
         carrito.agregarProducto(producto1)
         carrito.agregarProducto(producto2)

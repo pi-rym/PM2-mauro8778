@@ -22,7 +22,7 @@ calcularTotal(){
 aplicarDescuento(porcentajeDescuento){
 
     const subtotal= this.calcularTotal()
-    const descuento= subtotal * (porcentajeDescuento / 100)
+    const descuento= this.carlcularTotal * (porcentaje / 100)
     const total= subtotal-descuento
 
     return total;
