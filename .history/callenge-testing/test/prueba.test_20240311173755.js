@@ -46,24 +46,24 @@ describe('metodos de la clase carritoCompra',()=>{
 
     it ('deberia tener un metodo llamado agragar al carro',()=>{
 
-        expect(typeof carrito.agregarProducto).tobe('function')
+        expect(typeof carritoCompra.agregarProducto).tobe('function')
     })
 
     it('deberia tener un metodo para llamar a la calculadora',()=>{
 
-        expect(typeof carrito.carlcularTotal).tobe('function')
+        expect(typeof carritoCompra.carlcularTota).tobe('function')
     })
     it('deberia poder agregar un producto a la lista',()=>{
 
-        carrito.agregarProducto(producto1)
-        expect(carrito.producto).tocontain(producto1)
+        carritoCompra.agregarProducto(producto1)
+        expect(carritoCompra.producto).tocontain(producto1)
     })
 
     it('el metodo calculartotal deberia sumar todos los productos',()=>{
 
-        carrito.agregarProducto(producto1)
-        carrito.agregarProducto(producto2)
-        const total = producto1.precio * producto1.cantidad + producto2.precio * producto2.cantidad
+        carritoCompra.agregarProducto(producto1)
+        carritoCompra.agregarProducto(producto2)
+        const total =producto1.price*producto1.quantity+producto2.price*producto2*quantity
         carritoCompra.carlcularTota()
         expect(total).tobe(totalExpect)
 
@@ -71,16 +71,15 @@ describe('metodos de la clase carritoCompra',()=>{
 
     it('el metodo aplicarDescuento deberia aplicar descuento al total',()=>{
 
-        carrito.agregarProducto(producto1)
-        carrito.agregarProducto(producto2)
+        carritoCompra.agregarProducto(producto1)
+        carritoCompra.agregarProducto(producto2)
 
-        const subtotal = producto1.precio * producto1.cantidad + producto2.precio * producto2.cantidad;
+        const subtotal=producto1.price*producto1.quantity+ producto2.price*producto2*quantity;
 
         const porcentajeDescuento=30
-
-        const totalExpect = subtotal = (subtotal * (porcentajeDescuento/100))
+        const totalExpect=subtotal=(subtotal*(porcentajeDescuento/100))
     
-        const total = carrito.aplicarDescuento(porcentajeDescuento)
+        const total=carritoCompra.aplicarDescuento(porcentajeDescuento)
         expect(totalExpect).toBe(total);
     });
 });

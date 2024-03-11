@@ -12,8 +12,7 @@ agregarProducto(producto){
 
 carlcularTotal(){
 
-    let total = 0;
-
+    let total=0;
     for(const item of this.productos){
         total += item.precio * item.cantidad
     }
