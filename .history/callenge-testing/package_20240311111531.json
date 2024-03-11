@@ -1,0 +1,11 @@
+{
+  "name": "callenge-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jets"
+  },
+  "author": "",
+  "license": "ISC"
+}

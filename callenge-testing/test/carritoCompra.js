@@ -1,0 +1,1 @@
+const caritoCompra = require("./index")
