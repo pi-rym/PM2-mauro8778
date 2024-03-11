@@ -23,7 +23,7 @@ describe('sobre el constructor de la clase CarritoCompra',()=>{
 
 
     it('Deberia guardar productos en la lista',()=>{
-        expect(carrito.productos).to([]);
+        expect(carrito.productos.length).toBeGreaterThan(0);
     })
 
 })

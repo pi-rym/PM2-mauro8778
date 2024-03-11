@@ -23,7 +23,7 @@ describe('sobre el constructor de la clase CarritoCompra',()=>{
 
 
     it('Deberia guardar productos en la lista',()=>{
-        expect(carrito.productos).to([]);
+        expect(carrito.productos).toBe([]);
     })
 
 })
@@ -65,7 +65,7 @@ describe('metodos de la clase carritoCompra',()=>{
         carrito.agregarProducto(producto1)
         carrito.agregarProducto(producto2)
         const total = producto1.precio * producto1.cantidad + producto2.precio * producto2.cantidad
-        const totalExpect = carrito.calcularTotal()
+        carrito.calcularTotal()
         expect(total).toBe(totalExpect)
 
     })
@@ -79,9 +79,9 @@ describe('metodos de la clase carritoCompra',()=>{
 
         const porcentaje=30;
 
-        const totalExpect =  (subtotal * (porcentaje/100))
+        const totalExpect =  (subtotal * (porcentajeDescuento/100))
     
-        const total = carrito.aplicarDescuento(porcentaje)
+        const total = carrito.aplicarDescuento(porcentajeDescuento)
         expect(totalExpect).toBe(total);
     });
 });

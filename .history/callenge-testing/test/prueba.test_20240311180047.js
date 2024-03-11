@@ -5,7 +5,7 @@ describe('carritoCompra',()=>{
     let carrito;
 beforeEach (()=>{
 
-    carrito = new carritoCompra();
+    const carrito = new carritoCompra();
 });
 
 describe('sobre el constructor de la clase CarritoCompra',()=>{
@@ -18,12 +18,12 @@ describe('sobre el constructor de la clase CarritoCompra',()=>{
     })
     it('carrito deberia ser una instancia de la clase CarritoCompra',()=>{
 
-        expect (carrito instanceof carritoCompra).toBe(true);
+        expect(carrito instanceof (carritoCompra).toBe('function'))
     })
 
 
     it('Deberia guardar productos en la lista',()=>{
-        expect(carrito.productos).to([]);
+        expect(carrito.productos).toBe([]);
     })
 
 })
@@ -47,17 +47,17 @@ describe('metodos de la clase carritoCompra',()=>{
 
     it ('deberia tener un metodo llamado agragar al carro',()=>{
 
-        expect(typeof carrito.agregarProducto).toBe('function');
+        expect(typeof carrito.agregarProducto).tobe('function')
     })
 
     it('deberia tener un metodo para llamar a la calculadora',()=>{
 
-        expect(typeof carrito.carlcularTotal).toBe('function')
+        expect(typeof carrito.carlcularTotal).tobe('function')
     })
     it('deberia poder agregar un producto a la lista',()=>{
 
         carrito.agregarProducto(producto1)
-        expect(carrito.productos).toContain(producto1)
+        expect(carrito.productos).tocontain(producto1)
     })
 
     it('el metodo calculartotal deberia sumar todos los productos',()=>{
@@ -65,8 +65,8 @@ describe('metodos de la clase carritoCompra',()=>{
         carrito.agregarProducto(producto1)
         carrito.agregarProducto(producto2)
         const total = producto1.precio * producto1.cantidad + producto2.precio * producto2.cantidad
-        const totalExpect = carrito.calcularTotal()
-        expect(total).toBe(totalExpect)
+        carritoCompra.carlcularTota()
+        expect(total).tobe(totalExpect)
 
     })
 
@@ -77,11 +77,11 @@ describe('metodos de la clase carritoCompra',()=>{
 
         const subtotal = producto1.precio * producto1.cantidad + producto2.precio * producto2.cantidad;
 
-        const porcentaje=30;
+        const porcentajeDescuento=30
 
-        const totalExpect =  (subtotal * (porcentaje/100))
+        const totalExpect = subtotal = (subtotal * (porcentajeDescuento/100))
     
-        const total = carrito.aplicarDescuento(porcentaje)
+        const total = carrito.aplicarDescuento(porcentajeDescuento)
         expect(totalExpect).toBe(total);
     });
 });

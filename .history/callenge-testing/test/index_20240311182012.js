@@ -22,7 +22,7 @@ carlcularTotal(){
 aplicarDescuento(){
 
     const subtotal= this.carlcularTotal()
-    const descuento= this.carlcularTotal * (porcentaje/100)
+    const descuento= this.carlcularTotal * (porcentajeDescuento/100)
     const total= subtotal-descuento
 
     return total;

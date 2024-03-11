@@ -23,7 +23,7 @@ describe('sobre el constructor de la clase CarritoCompra',()=>{
 
 
     it('Deberia guardar productos en la lista',()=>{
-        expect(carrito.productos).to([]);
+        expect(carrito.productos).toBe([]);
     })
 
 })
@@ -65,7 +65,7 @@ describe('metodos de la clase carritoCompra',()=>{
         carrito.agregarProducto(producto1)
         carrito.agregarProducto(producto2)
         const total = producto1.precio * producto1.cantidad + producto2.precio * producto2.cantidad
-        const totalExpect = carrito.calcularTotal()
+        carritoCompra.calcularTotal()
         expect(total).toBe(totalExpect)
 
     })
