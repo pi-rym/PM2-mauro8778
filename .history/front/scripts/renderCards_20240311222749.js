@@ -9,7 +9,7 @@ const renderCards = (data) =>{
                         <p>Director:${card.director}</p>
                         <p>Duracion:${card.duration}</p>
                         <p>Puntuación:${card.rate}</p>
-                        <img  src="${card.poster}" class="img"><a href=""></a> > 
+                        <img  src="${card.poster}" class="img"<a href=""></a> > 
                     </div>
           </div> 
             ` 
