@@ -50,18 +50,18 @@ h1{
 }
 .container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
   }
   
   nav {
-    margin: 0 20px; 
+    margin: 0 20px; /* Margen a los costados */
   }
   
   .imagen {
-    width: 280px; 
-  height: 420px; 
-  object-fit: cover; 
+    width: 280px; /* Ancho deseado */
+  height: 420px; /* Alto deseado */
+  object-fit: cover; /* Altura automática */
   }
 #clase{
     margin: auto;
@@ -193,8 +193,9 @@ p:hover{
     border-top:2px solid red; 
     position:relative;
     top: 0;
-    transition: top ease 0.5s;
-    background-color: transparent
+transition: top ease 0.5s;
+background-color: transparent;
+
 }
 .button2:hover{
 
@@ -207,7 +208,7 @@ p:hover{
     overflow-x: hidden; 
     overflow-y: hidden; 
     scroll-snap-type: x mandatory;
-    width: 100%;  
+    width: 100%; 
   }
   
   .imagen2 {

@@ -1,9 +1,8 @@
 const {Router} = require("express");
 
 const getmovies = require("./getMovies");
-
 const router = Router();
 
-router.use("/movies",getmovies);
+movies.use("/movies", getMovies);
 
-module.exports = router;
+module.exports= movies;

@@ -50,18 +50,18 @@ h1{
 }
 .container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
   }
   
   nav {
-    margin: 0 20px; 
+    margin: 0 20px; /* Margen a los costados */
   }
   
   .imagen {
-    width: 280px; 
-  height: 420px; 
-  object-fit: cover; 
+    width: 280px; /* Ancho deseado */
+  height: 420px; /* Alto deseado */
+  object-fit: cover; /* Altura automática */
   }
 #clase{
     margin: auto;
