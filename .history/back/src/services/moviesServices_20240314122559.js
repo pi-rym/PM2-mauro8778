@@ -4,7 +4,7 @@ const axios= require("axios");
 
 module.exports={
 
-    getAllMovies : async ()=>{
+    getAllMovies = async ()=>{
 
         try {
             const {data} = await axios.get(
@@ -17,5 +17,5 @@ module.exports={
             throw new error(error);
         }
         
-    },
-};
+    };
+}
