@@ -107,16 +107,24 @@ transition: top ease 0.5s;
     color: red; } 
 
 #CardsContenier{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+text-align: center;
+
+flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
+align-items: center; 
+
 }
 
 .contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    transition: transform 0.5s ease; }
+    transition: transform 0.5s ease; /* Transición para el movimiento vertical */
+  }
   
 .card {
     width: 250px;
@@ -125,12 +133,12 @@ transition: top ease 0.5s;
     border-radius: 10px;
     border: 0.1em dashed  white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease; /* Transición para el efecto hover */
   }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+    transform: translateY(-10px); /* Mover hacia arriba al pasar el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Añadir una sombra más pronunciada */
   }
   
 .titulo {
@@ -138,13 +146,10 @@ transition: top ease 0.5s;
     font-weight: bold;
     margin-bottom: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    white-space: nowrap; /
   }
   .titulo:hover{
 
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo claro casi transparente */
     transform: translateY(-5px); 
 
 
@@ -157,7 +162,7 @@ transition: top ease 0.5s;
     color: white;
   }
 p:hover{
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo claro casi transparente */
     transform: translateY(-5px); 
 
   }
@@ -173,7 +178,7 @@ p:hover{
 
     font-family:"Satisfy", cursive;
     font-size: 2.5em;
-    text-align: justify; 
+    text-align: justify; /* Margen justificado */
   line-height: 1.5;
   color: white;
   font-weight: normal;

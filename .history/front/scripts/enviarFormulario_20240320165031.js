@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 async function enviarFormulario(event) {
-  event.preventDefault();
+  
     const checkboxes = document.getElementsByName('genre');
     const genres = [];
     checkboxes.forEach(checkbox => {

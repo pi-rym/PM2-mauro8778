@@ -48,6 +48,6 @@ function validar(event){
     }
     
 }
-document.getElementById('formulario').addEventListener('submit', validar);
+document.querySelector('form').addEventListener('submit', validar);
 
 module.exports = limpiarFormulario;

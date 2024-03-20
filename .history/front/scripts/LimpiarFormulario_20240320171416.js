@@ -17,8 +17,8 @@ else{
 
 })
 }
-function validar(event){
-    event.preventDefault();
+function validar(){
+
     
 
     const tituloinput =document.getElementById("title");
@@ -44,10 +44,10 @@ function validar(event){
     }
     else{
 
-        formulario.submit();
+        this.submit();
     }
     
 }
-document.getElementById('formulario').addEventListener('submit', validar);
+document.querySelector('form').addEventListener('submit', validar);
 
 module.exports = limpiarFormulario;

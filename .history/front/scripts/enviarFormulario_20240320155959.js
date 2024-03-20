@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 async function enviarFormulario(event) {
-  event.preventDefault();
+    event.preventDefault();
     const checkboxes = document.getElementsByName('genre');
     const genres = [];
     checkboxes.forEach(checkbox => {
@@ -24,7 +24,7 @@ async function enviarFormulario(event) {
     try {
         const response = await axios.post('http://localhost:3000/movies', movieData);
         if (response.status === 201) {
-            alert('Película creada exitosamente:');
+            alert('Película creada exitosamente:', response.data);
         } else {
             alert('Error al crear la película:', response.statusText);
         }

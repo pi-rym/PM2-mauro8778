@@ -6,7 +6,4 @@ document.addEventListener("DOMContentLoaded", () => {
     formulario.addEventListener("submit", async function(event) {
         await enviarFormulario(event); 
     });
-
-    const limpiarBtn = document.getElementById("limpiar");
-limpiarBtn.addEventListener("click", limpiarFormulario);
 });

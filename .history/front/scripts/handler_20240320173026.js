@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded",() =>{
     getFilms();
 
     const submit = document.getElementById("formulario");
-    submit.addEventListener("submit", async function(event){
+    submit.addEventListener("click", async function(event){
         await enviarFormulario(event);
     });
 });
