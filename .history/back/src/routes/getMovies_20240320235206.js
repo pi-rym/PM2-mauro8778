@@ -1,7 +1,6 @@
 const {Router} = require("express");
 
 const movies = require ("../controllers/movies");
-const validarMovies = require("../middleware/validarMovies")
 
 const getMovies = Router();
 
