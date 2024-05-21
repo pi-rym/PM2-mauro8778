@@ -1,8 +1,7 @@
 
 const enviarFormulario = require("./enviarFormulario");
 const renderCards = require ("./renderCards");
-
-const axios = require("axios");
+const axios = require('axios');
 
 
 const getFilms = async ()=>{
